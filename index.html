@@ -9,21 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Priority Vote</title>
+    <title>Freelancer - Start Bootstrap Theme</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,34 +31,35 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="index">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               
+                <a class="navbar-brand" href="#page-top">CSE 190 Lab 1</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">Home</a>
+                    <li class="hidden">
+                        <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#services">#StopTheZombies</a>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Photos</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Classes</a>
+                    <li class="page-scroll">
+                        <a href="#about">Write Up</a>
                     </li>
-                   
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -69,192 +67,515 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <!-- Header -->
     <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Its Time for you to Vote</h1>
-                <hr>
-               
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  
+                    <div class="intro-text">
+                        <span class="name">Lab 1</span>
+                        <hr class="star-light">
+                        <span class="skills">Michael Mullen A09804064</span>
+                        <br/>
+                        <span class="skills">Matthew Woo A10952002</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-   
-
-    <section id="services">
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">#StopTheZombies</h2>
-                    <hr class="primary">
+                    <h2>Brightness</h2>
+                    <hr class="star-primary">
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-brightness0-prj.bmp" class="" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-brightness0.5-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-brightness1.0-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-brightness2.0-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+                
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contrast</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-contrast-5-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-contrast-1-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-contrast0-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-contrast1-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-contrast2.5-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Saturation</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-saturation-1.5-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-saturation0-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-saturation0.4-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-saturation1-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-saturation4-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Gamma</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-gamma0.1-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-gamma0.5-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-gamma0.8-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-gamma1-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-gamma1.5-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-gamma3-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Crop</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/shed-crop0.0.512.384-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/shed-crop100.100.512.384-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/shed-crop520.100.300.600-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+               
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Quantize</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-quantize1-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-quantize2-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-quantize4-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-quantize8-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+               
+            </div>
+
+        <!--START HERE-->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>RandomDither</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                       
+                        <img src="img/images/flower-randomDither4-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>FloydSteinbergDither</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        
+                        <img src="img/images/flower-FloydSteinbergDither4-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/images/flower-FloydSteinbergDither2-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+                   
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Blur</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/images/shed-blur3.0-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/images/shed-blur5-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/images/shed-blur13-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Sharpen</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/images/mandrill-Sharpen-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Edge Detection</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/images/checkerboard2-edgeDetect100-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/images/wave-edgeDetect50-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/images/wave-edgeDetect100-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Fun Filter</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/images/mandrill-Sharpen-prj.bmp" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+
+
+            </div>
         </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>As Bright as Diamonds</h3>
-                       
-                    </div>
+                <div class="col-lg-12 text-center">
+                    <h2>Write Up</h2>
+                    <hr class="star-light">
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Straight Shooters</h3>
-                        
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p> </p>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date on the Current Trends</h3>
-                        
-                    </div>
+                <div class="col-lg-12 text-center">
+                    <h3>Features</h3>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Love Life</h3>
-                        
-                    </div>
+                <div class="col-lg-4">
+                    <p>For this assigment we implemented multiply graphic features that can be used on any 2D image.</p>
                 </div>
+                <div class="col-lg-12 text-center">
+                    <h4>Section 3.2</h4>
+                </div>
+                <div class="col-lg-4">
+                    <p>This part of the assigment mainly had us create basic features for photo editing.  Brighten(double factor) will brighten the overall photo based on the inputted factor.  We implemented this by multiplying all of the pixels by the factor.  ChangeContrast(double factor) is a method that will change the contrast of a photo by getting the average luminance of a photo and puttting the average through PixelLerp.  ChangeSaturation(double factor) will change the saturation of a photo by using the grayscale of the image from the average luminance.  ChangeGamma(double factor) will output the gamma correction of the image by setting the color to the power of (1/factor).  Crop(int x, int y, int w, int h) will crop an image getting the pixerls based on the parameters.</p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <h4>Section 3.3</h4>
+                </div>
+                <div class="col-lg-4">
+                    <p>This part of the assigment we mainly delt with implementing Quantization and Dithering.  Quantize(int nbits) will output the the quantized image based on the nbits per color channel.  We first get the quatum by rounding off the original pixel value and the number of bins.  We then get the new color while keeping the necessary range.  RandomDither(int nbits) will essential do the same thing, but with some added noise.  FloydSteinbergDither(int nbits) will acquire an error diffused version of the photo.  </p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <h4>Section 3.4</h4>
+                </div>
+                <div class="col-lg-4">
+                    <p>This section in our opinion, was the hardest one.  We mainly focused on Blur, sharpen, and edge detection.  For blur, we broke up the method into two parts: the convolve and getting the filter/mask.  First we would acquire the proper mask of pixels based on the width inputted.  If the width was 3, then we would have a 3x3 array to be our mask of pixels.  We would then use the given convolve function to blur the image.  After we did blur, sharpen was easy.  We simply inputted the hardcoded sharped mask and called out convolve function.  For Edge detection, we were able to detect the edge pixels by using a Sobel filter which finds the gradience of the horizontal and verticle axis to determine when a pixel is changing color greatly.  </p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <h4>Section 3.5</h4>
+                </div>
+                <div class="col-lg-4">
+                    <p>For this section we focused on doing scale and shift.  For Scale(int sizex, int sizey), we implemented Minify and Magnify functions for x and y.  We then focused on modifying the pixels for the x location of the pixels, and then location based on the y pixels. Once it was specified whether we were using a minify ot magnify, the minify and magnify methods would use the sampling_method variable to determine which filter to use.  It then would return a pixel to be stored in the new pixel location.  For our scale, Scaling in the X did not work and would break out code, due to other responsibilities we were unable to finish it. Shift did something similar, except we would use the inputed paramters to shift the photo instead of scaling them.  Sadly we were unable to implement it successfully in time for the assignment.  It is commented out in the given section.  We both sadly got called away for family emergency and this hindered us from finishing.  </p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <h4>Section 3.6</h4>
+                </div>
+                <div class="col-lg-4">
+                    <p>For our nonlinear filter, we created a basic filter to try and get rid of some noise in the photo.  Fun(int factor) attempts to reduce the noise of the photo by creating a median filter.  We loop through all over the pixels based on a range and implement I(u,v) = median{I(u+i,v+j)|getpixel(i,j)} where i and j range from 0 to 3. </p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <h3>Conclusion</h3>
+                </div>
+                <div class="col-lg-4">
+                    <p>By splitting up the sections we were able to get a lot of work done fast.  We would like to thank the TAs and the professor for separating it into a clear easy to read document.  We did have some difficulties sharing code over git, but were able to come together to compile all of our work into one conclusive project.  We also used a script Matt made that would output the picture the solution would output and the one our code would output.  This made comparing the image very easy.</p>
+                </div>
+
+                <div class="col-lg-12 text-center">
+                    <h3>View Photos Here</h3>
+                </div>
+                <div class="col-lg-4">
+                    <p>https://www.dropbox.com/sh/818o77bgkk42ddp/AABXOVlX6-ZFfABtaqp5PJ-la?dl=0</p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <h3>Download Source and Executable</h3>
+                </div>
+                <div class="col-lg-4">
+                    <p>https://www.dropbox.com/s/2ujy358ij24w3nh/image.exe?dl=0</p>
+                </div>
+               
             </div>
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6" onclick="myFunction3()">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    MGT 103
-                                </div>
-                                <div class="project-name">
-                                    Click For Priority
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <script>
-                    function myFunction3() {
-                        alert("Priotiy: 99%");
-                    }
-                </script>
-                <div class="col-lg-4 col-sm-6" onclick="myFunction99()">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    CSE 105
-                                </div>
-                                <div class="project-name">
-                                    Click For Priority
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <script>
-                    function myFunction99() {
-                        alert("No More Votes");
-                    }
-    </script>
-                <div class="col-lg-4 col-sm-6" onclick="myFunction12()">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    CSE 120
-                                </div>
-                                <div class="project-name">
-                                    Click For Priority
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                    <script>
-                        function myFunction12() {
-                            alert("Priotiy: 36%");
-                        }
-                </script>
-                <div class="col-lg-4 col-sm-6" onclick="myFunction()">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    CSE 130
-                                </div>
-                                <div class="project-name">
-                                    Click For Priority
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <script>
-                    function myFunction() {
-                        alert("Priotiy: 76%");
-                    }
-                </script>
-                <div class="col-lg-4 col-sm-6" onclick="myFunction2()">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    CSE 190
-                                </div>
-                                <div class="project-name">
-                                    Click for Priority
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <script>
-                    function myFunction2() {
-                        alert("No more Votes");
-                    }
-                </script>
-                <div class="col-lg-4 col-sm-6" onclick="myFunction7()">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <script>
-                    function myFunction7() {
-                        alert("No more Votes");
-                    }
-                </script>
-            </div>
-        </div>
-    </section>
 
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
    
-
-    
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -263,12 +584,16 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
+    <script src="js/freelancer.js"></script>
 
 </body>
 
