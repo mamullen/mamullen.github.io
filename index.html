@@ -391,14 +391,16 @@
                     <h4>Section 3.4-Quadric Simplification</h4>
                 </div>
                 <div class="col-lg-4">
-                    <p>For this part of the assignment, we simply started with our code from Section 3.3 and implemented the algorithm in Garland's paper.  We calculated each Q matrix for all the vrtices present.  We then stored them in each vertex. In order to determine which edge to collapse, we would first calculate all the error matrices for each individual vertex.  We then looped through all the edges in order to find the optimal point and associated error.  We then put each edge into a C++ STL set. This implements a binary tree.  We can then determine which one has the lowest cost and decimate it.  We collpased the edge by simply invalidated the shared faces and setting both v1 and v2 to our new v_prime.</p>
+                    <p>For this part of the assignment, we simply started with our code from Section 3.3 and implemented the algorithm in Garland's paper.  We calculated each Q matrix for all the vertices present.  We then stored them in each vertex. In order to determine which edge to collapse, we would first calculate all the error matrices for each individual vertex.  We then looped through all the edges in order to find the optimal point and associated error.  We then put each edge into a C++ STL set. This implements a binary tree.  We can then determine which one has the lowest cost and decimate it.  We collpased the edge by simply invalidated the shared faces and setting both v1 and v2 to our new v_prime.</p>
                 </div>
                 <div class="col-lg-12 text-center">
                     <h4>Section 3.5-Progressive Meshes</h4>
                 </div>
                 <div class="col-lg-4">
                     <p>For this part of the assignment, we added features in our Quadric Simplification that would keep track of the changes we created.  We would save each V_prime, V1, V2, and the faces changed of each edge decimation.  The list of faces would only be the ones affected by the change, which were the ones previously owned by V2.  The output would be saved into collapsed_edges.txt.  <br/>Format shown below: <br/><i>VPrime = VPrime_Index: VPrime.x, VPrime.y, Vprime.z <br/>V1 = V1_Index : V1.x, V1.y, V1.z <br/>V2 = V2_Index : V2.x, V2.y, V2.z <br/>Number of affected faces<br/>face = face_index: Vertex affected <br/>...<br/>  </i>
-                        The Vertex affected would mainly say which vertex of the three was changed so we can easily change it back.  The index is the place in our vertex vector that the vertex was located.  After we got had all the necessary information it was easy to start the vertex split. <br/> We began by storing all the written information.  We would then undo the changes done in our Quadric split by setting v_prime back to v1, validated v2's faces and setting all the affected faces of v2's list from vprime to v2.  </p>
+                        The Vertex affected would mainly say which vertex of the three was changed so we can easily change it back.  The index is the place in our vertex vector that the vertex was located.  After we got had all the necessary information it was easy to start the vertex split. <br/> We began by storing all the written information.  We would then undo the changes done in our Quadric split by setting v_prime back to v1, validated v2's faces and setting all the affected faces of v2's list from vprime to v2.
+                        <br/>
+                        We implemented Geomorph by passing the amount of time passed from frames.  We use that to linear interpolation between the edge and the optimal collapsed point.  We use the delta time to do 10 collpases per second.  Video shown below.</p>
                     
                 </div>
                 <div class="col-lg-12 text-center">
@@ -454,6 +456,12 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/nf-ha6CKh4Y" frameborder="0" allowfullscreen></iframe>
                     
                     </p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p>Geomorph</p>
+                    <br/>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/o-f0i_o5iWo" frameborder="0" allowfullscreen></iframe>
                 </div>
 
 
